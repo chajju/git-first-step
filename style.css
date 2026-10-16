@@ -1,0 +1,111 @@
+/* 색상을 바꾸고 싶다면 여기 값만 수정하면 돼요 */
+:root {
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  --color-background: #f3f4f6;
+  --color-card: #ffffff;
+  --color-text: #111827;
+  --color-sub-text: #6b7280;
+  --color-border: #d1d5db;
+  --color-error: #ef4444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", sans-serif;
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 32px;
+  background: var(--color-card);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.step[hidden] {
+  display: none;
+}
+
+.title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* 결과 문구는 항상 한 줄로 보여줘요 (길면 script.js 에서 글자를 줄여요) */
+.result-title {
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.emoji {
+  margin: 0;
+  font-size: 48px;
+}
+
+input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--color-primary);
+}
+
+.error {
+  margin: -8px 0 0;
+  font-size: 14px;
+  color: var(--color-error);
+  text-align: left;
+}
+
+.button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background: var(--color-primary);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--color-primary-hover);
+}
+
+.button-secondary {
+  color: var(--color-sub-text);
+  background: transparent;
+  border: 1px solid var(--color-border);
+}
+
+.button-secondary:hover {
+  background: var(--color-background);
+}

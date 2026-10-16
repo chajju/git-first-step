@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dentlink Git 첫걸음</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <!-- 1단계: 이름 입력 화면 -->
+    <form id="name-form" class="step">
+      <label for="name-input" class="title">이름을 입력해주세요</label>
+      <input id="name-input" type="text" placeholder="예: 차조이 (최대 5자)" maxlength="5" autocomplete="off" />
+      <p id="error-message" class="error" hidden>이름을 입력해주세요.</p>
+      <button type="submit" class="button">확인</button>
+    </form>
+
+    <!-- 2단계: 결과 화면 -->
+    <section id="result" class="step" hidden>
+      <p class="emoji">🎉</p>
+      <h1 class="title result-title"><span id="result-name"></span><span id="result-message"></span></h1>
+      <button id="reset-button" type="button" class="button button-secondary">처음으로</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

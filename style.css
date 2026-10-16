@@ -1,7 +1,7 @@
 /* 색상을 바꾸고 싶다면 여기 값만 수정하면 돼요 */
 :root {
-  --color-primary: #3b82f6;
-  --color-primary-hover: #2563eb;
+  --color-primary: #79ff2b;
+  --color-primary-hover: #20a876;
   --color-background: #f3f4f6;
   --color-card: #ffffff;
   --color-text: #111827;

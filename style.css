@@ -1,6 +1,6 @@
 /* 색상을 바꾸고 싶다면 여기 값만 수정하면 돼요 */
 :root {
-  --color-primary: #3b82f6;
+  --color-primary: #ff099;
   --color-primary-hover: #2563eb;
   --color-background: #f3f4f6;
   --color-card: #ffffff;
@@ -23,7 +23,9 @@ body {
   padding: 16px;
   background: var(--color-background);
   color: var(--color-text);
-  font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo",
+    sans-serif;
 }
 
 .card {
